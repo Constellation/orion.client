@@ -431,9 +431,9 @@ define("plugins/esprima/types", [], function() {
 		 */
 		Number : {
 			$$isBuiltin: true,
-			toExponential : new Definition("?Number:digits"),
-			toFixed : new Definition("?Number:digits"),
-			toPrecision : new Definition("?Number:digits"),
+			toExponential : new Definition("?String:digits"),
+			toFixed : new Definition("?String:digits"),
+			toPrecision : new Definition("?String:digits"),
 			// do we want to include NaN, MAX_VALUE, etc?	
 		
 			$$proto : new Definition("Object")
